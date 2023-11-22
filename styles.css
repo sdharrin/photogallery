@@ -1,0 +1,151 @@
+:root {
+    --green: #007d7b;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+body {
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+nav {
+    color: var(--white);
+    width: 100%;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: var(--green);
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+main {
+    background-color: var(--white);
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+#gallery, #about > p {
+    font-weight: bold;
+}
+
+#contact {
+    color: var(--white);
+    text-align: center;
+}
+
+form {
+    text-align: justify;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+form {
+    color: var(--white);
+}
+
+form div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div label {
+    width: 100%;
+
+}
+
+label {
+    margin-left: 120px;
+}
+
+input, textarea {
+    background-color: var(--white);
+    color: var(--green);
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--green);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 485px) {
+    h1 {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        
+    }
+
+    #gallery, #about {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+}
+
+@media screen and (min-width: 486px) and (max-width: 880px) {
+    
+}
+
+@media screen and (min-width: 1300px) {
+    
+}
